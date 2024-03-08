@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker | App</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">EXPENSE <span class="span-tracker">TRACKER</span></div>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-section">
+        <div class="container-main">
+            <h1 class="title">Track <span style="color:red">Your</span> Expenses</h1>
+            <div class="balance-field">
+                <h1>Your Balance</h1>
+                <h1>$ <span class="span-tracker" id="total-amt">6000</span></h1>
+            </div>
+            <div class="tracker same-box">
+                <div class="income-field common-prop">
+                    <h2>INCOME</h2>
+                    <!-- <input type="number" readonly> -->
+                    <h3 id="total-income"></h3>
+                </div>
+                <div class="expense-field common-prop">
+                    <h2>EXPENSE</h2>
+                    <!-- <input type="number" readonly> -->
+                    <h3 id="total-expense">$ 100</h3>
+                </div>
+
+            </div>
+            <div class="history-container same-box">
+                <h2>History</h2>
+                <div class="money history-common">
+                    <span>Transaction Name</span><span>Date</span> <span>Amount</span>
+                 </div>
+                 <!-- <table>
+                    <tr>
+                        <th>Transaction Name</th>
+                        <th>Date</th>
+                        <th>Amount</th>
+                    </tr>
+                 </table> -->
+                <!-- <div>
+                    <div class="money history-common">
+                        <span>Money</span><span>+600</span>
+                    </div>
+                    <div class="item history-common">
+                        <span>Item</span><span>-40</span>
+                    </div>
+                </div> -->
+            </div>
+            <div class="transcation same-box">
+                <h3>Add New Transcation</h3>
+                <form>
+                    <input type="text" placeholder="Enter name..." id="expense-name">
+                    <input type="number" placeholder="Enter amount.." id="expense-amount">
+                    <input type="date" name="" id="expense-date">
+                    <button id="subBtn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam dolor necessitatibus ea placeat ut, quis praesentium fugit quae sed. Id itaque totam ullam delectus adipisci nesciunt explicabo, quam officia accusantium.
+        Distinctio assumenda tempora tempore reprehenderit libero optio debitis sed modi dolorum, sint a eaque quaerat provident dicta quis quo voluptas non facilis autem voluptates, rem exercitationem atque! Ab, tenetur soluta!
+        Tempora doloribus quod magni, assumenda eos odit laborum ut repudiandae dolores voluptatibus temporibus saepe mollitia repellendus. Facere quo, at consequatur eius numquam eveniet veritatis, eum dolor nesciunt voluptas, nemo asperiores.</p> -->
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>

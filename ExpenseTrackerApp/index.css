@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: #fff;
+    height: 7vh;
+}
+
+nav {
+    width: 25%;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.span-tracker {
+    color: #0ef;
+}
+
+/* ----------------------Header Section Completed--------------- */
+.main-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #212121; */
+    /* background-repeat: no-repeat; */
+    background-position: center;
+    background-image: url("https://cdn.pixabay.com/photo/2016/11/25/23/15/moon-1859616_1280.jpg");
+    color: #fff;
+    padding: 1rem;
+
+}
+
+.container-main {
+    width: 70%;
+    height: 90vh;
+    border: 1px solid rgb(241, 206, 206);
+    border-bottom-right-radius: 3rem;
+    border-top-left-radius: 3rem;
+    backdrop-filter: blur(8px);
+}
+.title{
+    text-align: center;
+}
+.balance-field{
+    padding: 2rem;
+    /* border: 1px solid blue; */
+}
+.same-box{
+    width: 80%;
+    margin: auto;
+}
+.tracker{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* border: 1px solid yellow; */
+    border-bottom: 1px solid;
+    /* outline: #fff; */
+}
+.common-prop{
+    width: 45%;
+    /* display: flex; */
+    /* justify-content: center; */
+    
+    padding: 0.5rem;
+    /* align-items: center; */
+    height: 10vh;
+}
+.income-field{
+    border-right: 1px dashed #fff;
+}
+.history-container{
+    border: 1px solid pink;
+    padding: 1rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 30vh;
+}
+.history-common{
+    /* border: 1px solid blue; */
+    border-bottom: 1px solid ;
+    display: flex;
+    justify-content: space-between;
+    /* align-content: center; */
+    align-items: center;
+     padding: 0.5rem;
+}
+.transcation{
+    padding: 1rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+}
+form input{
+    width: 70%;
+    /* outline: none; */
+    border: none;
+    /* margin: auto; */
+    margin-left: 1rem;
+    font-size: 1.2rem;
+    margin-bottom: 1em;  
+}
+form button{
+    width: 50%;
+    margin-left: 1rem;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    background-color: #212121;
+    color: #fff;
+}
+
+
+@media  (max-width: 768px){
+    .container-main{
+        width: 100%;
+    }
+}
