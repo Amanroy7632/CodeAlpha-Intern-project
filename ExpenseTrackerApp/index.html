@@ -20,10 +20,10 @@
     </header>
     <main class="main-section">
         <div class="container-main">
-            <h1 class="title">Track <span style="color:red">Your</span> Expenses</h1>
+            <!-- <h1 class="title">Track <span style="color:red">Your</span> Expenses</h1> -->
             <div class="balance-field">
-                <h1>Your Balance</h1>
-                <h1>$ <span class="span-tracker" id="total-amt">6000</span></h1>
+                <h1>Current <span class="span-tracker">B</span>alance</h1>
+                <h1>🪙 <span class="span-tracker" id="total-amt">6000</span></h1>
             </div>
             <div class="tracker same-box">
                 <div class="income-field common-prop">
@@ -39,9 +39,10 @@
 
             </div>
             <div class="history-container same-box">
-                <h2>History</h2>
+                <h2><span>⌛</span>History</h2>
                 <div class="money history-common">
-                    <span>Transaction Name</span><span>Date</span> <span>Amount</span>
+                    <span class="trans-name">Transaction Name</span><span class="visible">Trans. Name</span> <span>Date</span> <span>Amount</span> <span></span>
+                    
                  </div>
                  <!-- <table>
                     <tr>
@@ -65,7 +66,7 @@
                     <input type="text" placeholder="Enter name..." id="expense-name">
                     <input type="number" placeholder="Enter amount.." id="expense-amount">
                     <input type="date" name="" id="expense-date">
-                    <button id="subBtn">Submit</button>
+                    <button class="submit-btn" id="subBtn">Submit</button>
                 </form>
             </div>
         </div>
