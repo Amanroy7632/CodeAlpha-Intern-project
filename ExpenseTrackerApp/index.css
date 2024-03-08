@@ -126,16 +126,16 @@ form input{
 }
 
 .item input:nth-child(2){
-    text-align: right;
-    /* background-color: transparent; */
+    text-align: left;
+    background-color: transparent;
     outline: none;
     border: none;
-    /* color: #fff; */
-    width: 27%;
+    color: #fff;
+    width: 18%;
     font-size: 1.2rem;
 }
 .item input:nth-child(3){
-    text-align: right;
+    text-align: left;
     background-color: transparent;
     outline: none;
     border: none;
@@ -148,11 +148,11 @@ form input{
 }
 .item input:nth-child(1){
     /* text-align: right; */
-    /* background-color: transparent; */
+    background-color: transparent;
     outline: none;
     border: none;
     width: 30%;
-    /* color: #fff; */
+    color: #fff;
     font-size: 1.2rem;
 }
 .visible{
