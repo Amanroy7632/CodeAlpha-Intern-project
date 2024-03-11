@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow: hidden;
+    /* overflow: hidden; */
     font-family: "Raleway", sans-serif;
 }
 
@@ -26,6 +26,14 @@ ul {
     display: flex;
     justify-content: space-between;
     list-style: none;
+}
+li a{
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+li a:hover{
+    color: #0ef;
 }
 
 .span-tracker {
@@ -111,28 +119,47 @@ ul {
 }
 form{
     display: flex;
+    
     flex-direction: column;
     padding-top: 1rem;
 }
 form input{
     width: 70%;
-    /* outline: none; */
-    outline-color: #1e8449;
+    outline: none;
+    background-color: transparent;
+    color: #0ef;
     border: none;
-    /* margin: auto; */
+    border-bottom: 1px solid #fff;
     margin-left: 1rem;
     font-size: 1.2rem;
     margin-bottom: 1em;  
 }
-
+.name-amount{
+    display: flex;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+}
+form select{
+    width: 70%;
+    outline: none;
+    background-color: transparent;
+    color: #0ef;
+    /* outline-color: #1e8449; */
+    border: none;
+    border-bottom: 1px solid #fff;
+    /* margin: auto; */
+    margin-left: 1rem;
+    font-size: 1.2rem;
+    margin-bottom: 1em;  
+    overflow: hidden;
+}
 .item input:nth-child(2){
     text-align: left;
     background-color: transparent;
     outline: none;
     border: none;
     color: #fff;
-    width: 18%;
-    font-size: 1.2rem;
+    width: 30%;
 }
 .item input:nth-child(3){
     text-align: left;
@@ -141,10 +168,11 @@ form input{
     border: none;
     width: 10%;
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 900;
 }
 .money span{
-    font-size: 1.3rem;
+    /* font-size: 1.3rem; */
 }
 .item input:nth-child(1){
     /* text-align: right; */
@@ -153,18 +181,16 @@ form input{
     border: none;
     width: 30%;
     color: #fff;
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
 }
 .visible{
     display: none;
 }
 form button{
-    width: 40%;
+    width: 70%;
     margin-left: 1rem;
-    /* font-size: 1.2rem; */
-    /* padding: 0.5rem; */
-    /* background-color: #212121; */
-    /* color: #fff; */
+    margin: auto;
+    margin-top: 1.2rem;
 }
 
 ::-webkit-scrollbar {
@@ -182,6 +208,9 @@ form button{
     border-radius: 6px;
   }
 @media  (max-width: 768px){
+    nav {
+        width: 50%;
+    }
     .container-main{
         width: 100%;
         
@@ -208,8 +237,31 @@ form button{
     .visible{
         display:inherit;
     }
+    form{
+        flex-direction: column;
+    }
+    .item input:nth-child(3){
+        text-align: left;
+        background-color: transparent;
+        outline: none;
+        border: none;
+        width: 10%;
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 700;
+    }
 }
 /* submit button design  */
+#delbtn{
+    cursor: pointer;
+    background: transparent;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+#delbtn:hover{
+    background-color: #fff;
+    color: #fff;
+}
 .submit-btn {
     appearance: none;
     backface-visibility: hidden;

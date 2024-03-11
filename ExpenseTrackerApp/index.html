@@ -15,6 +15,7 @@
             <ul>
                 <li>Home</li>
                 <li>About</li>
+                <li><a href="https://github.com/Amanroy7632" target="_blank">Github</a></li>
             </ul>
         </nav>
     </header>
@@ -23,7 +24,7 @@
             <!-- <h1 class="title">Track <span style="color:red">Your</span> Expenses</h1> -->
             <div class="balance-field">
                 <h1>Current <span class="span-tracker">B</span>alance</h1>
-                <h1>🪙 <span class="span-tracker" id="total-amt">6000</span></h1>
+                <h1>🪙 <span class="span-tracker" id="total-amt"></span></h1>
             </div>
             <div class="tracker same-box">
                 <div class="income-field common-prop">
@@ -43,38 +44,30 @@
                 <div class="money history-common">
                     <span class="trans-name">Transaction Name</span><span class="visible">Trans. Name</span> <span>Date</span> <span>Amount</span> <span></span>
                     
-                 </div>
-                 <!-- <table>
-                    <tr>
-                        <th>Transaction Name</th>
-                        <th>Date</th>
-                        <th>Amount</th>
-                    </tr>
-                 </table> -->
-                <!-- <div>
-                    <div class="money history-common">
-                        <span>Money</span><span>+600</span>
-                    </div>
-                    <div class="item history-common">
-                        <span>Item</span><span>-40</span>
-                    </div>
-                </div> -->
+            </div>
             </div>
             <div class="transcation same-box">
-                <h3>Add New Transcation</h3>
+                <h3>Add New Transcation &nbsp;&nbsp;&nbsp;&nbsp;<span class="error" style="color: red;"> </span></h3>
                 <form>
-                    <input type="text" placeholder="Enter name..." id="expense-name">
-                    <input type="number" placeholder="Enter amount.." id="expense-amount">
-                    <input type="date" name="" id="expense-date">
+                    <div class="name-amount">
+                        <input type="text" placeholder="Enter transcation name..." id="expense-name">
+                        <input type="number" placeholder="Enter amount.." id="expense-amount">
+
+                    </div>
+                    <div class="name-amount">
+                        <input type="date" name="" id="expense-date">
+                        <select name="trans-type" id="trans-type">
+                            <option value="+">Income</option>
+                            <option value="-">Expense</option>
+                        </select>
+
+                    </div>
                     <button class="submit-btn" id="subBtn">Submit</button>
                 </form>
             </div>
         </div>
     </main>
     <footer>
-        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam dolor necessitatibus ea placeat ut, quis praesentium fugit quae sed. Id itaque totam ullam delectus adipisci nesciunt explicabo, quam officia accusantium.
-        Distinctio assumenda tempora tempore reprehenderit libero optio debitis sed modi dolorum, sint a eaque quaerat provident dicta quis quo voluptas non facilis autem voluptates, rem exercitationem atque! Ab, tenetur soluta!
-        Tempora doloribus quod magni, assumenda eos odit laborum ut repudiandae dolores voluptatibus temporibus saepe mollitia repellendus. Facere quo, at consequatur eius numquam eveniet veritatis, eum dolor nesciunt voluptas, nemo asperiores.</p> -->
     </footer>
     <script src="index.js"></script>
 </body>
