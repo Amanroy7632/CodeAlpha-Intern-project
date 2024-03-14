@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+    font-family: "Raleway", sans-serif;
+}
+
+header {
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: #fff;
+    height: 7vh;
+}
+
+nav {
+    width: 25%;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+li a{
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+li a:hover{
+    color: #0ef;
+}
+
+.span-tracker {
+    color: #0ef;
+}
+/* --------------------------main section --------------- */
+.main{
+    display: flex;
+    height: 78vh;
+    /* overflow-y: auto; */
+    overflow-x: hidden;
+    overflow-y: visible;
+    /* flex-direction: column; */
+    /* justify-content: center; */
+}
+.sideBar{
+    /* position: absolute; */
+    width: 20vw;
+    height: 100vh;
+    border: 1px solid red;
+    display: flex;
+    transition: all 0.3s ease-in-out;
+    justify-content: space-between;
+}
+.sideBar.hideSideBar{
+    width: 2vw;
+}
+.sidebar-content{
+    width: 90%;
+    height:100%;
+    /* border: 2px solid blue; */
+    transition: all 0.3s ease-out;
+}
+.sidebar-content.hideSideBar-content{
+    display: none;
+}
+.sidebar-slider{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-container{
+    width: 100vw;
+    height: 100vh;
+    /* border: 1px solid black; */
+}
+.data-container{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.search-question{
+    margin-top: 1rem;
+    width: 80%;
+    /* border: 1px solid grey; */
+    height: 10vh;
+    display: flex;
+}
+.profile-logo{
+    width: 10%;
+    /* overflow: hidden; */
+    /* border: 1px solid green; */
+    /* border-radius: 50%; */
+    height: 100%;
+    /* height: 100%; */
+    display: flex;
+    justify-content: center;
+    /* object-fit: fill; */
+    /* align-items: center; */
+    /* object-fit: contain; */
+}
+.ganesh-content{
+    padding-top: 1rem;
+    width: 100%;
+    /* border: 2px solid #0ef; */
+    /* display: flex; */
+}
+.ganesh-img{
+    width: 20%;
+    /* height: 10rem; */
+
+    display: flex;
+    /* border: 1px solid red; */
+    justify-content: space-evenly;
+    
+    height: 5rem;
+}
+.ganesh-img h2{
+    padding-top: 0.5rem;
+}
+.ganesh-img img{
+    width: 5rem;
+    padding: 1rem;
+    /* border: 1px solid red; */
+    border-radius: 50%;
+}
+.content{
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+.content p{
+    padding-left: 6rem;
+}
+/* .ganesh-logo{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+} */
+/* .ganesh-logo img{
+    width: 5rem;
+} */
+.profile-logo img{
+    /* border: 2px solid gray; */
+    border-radius: 50%;
+    /* margin-left: 1rem; */
+}
+#question{
+    font-size: 1.2rem;
+}
+.userInfo{
+    padding-top: 1.4rem;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+.output{
+    width: 80%;
+    /* display: flex; */
+    /* overflow-y: scroll;
+    overflow-x: hidden; */
+    /* border: 5px solid grey; */
+    /* height: 70vh; */
+}
+.askQuestion{
+    width: 65%;
+    height: 10vh;
+    margin: auto;
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dark{
+background-color: #212121;
+color: #fff;
+}
+form {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+form input{
+    width: 80%;
+    padding: 1.2rem;
+    border-radius: 2rem 0 0 2rem;
+    border-bottom: none;
+    outline: 1px solid gray;
+    
+    background: transparent;
+    /* border-right: none; */
+    color: #fff;
+    font-size: 1.2rem;
+}
+form input:focus{
+
+    border: 1px solid;
+}
+form button{
+    font-size: 1.2rem;
+    background: transparent;
+    
+    outline: none;
+    border: 1px solid gray;
+    /* border-left: none; */
+    border-radius: 0 2rem 2rem 0;
+    padding: 1.2rem;
+}
