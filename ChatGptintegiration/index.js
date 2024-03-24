@@ -28,7 +28,6 @@ document.addEventListener("DOMContentLoaded",()=>{
     });
     console.log(data);
 })
-// const API_KEY="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";
 function setSideBarContent(){
 
 }
