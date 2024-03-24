@@ -46,14 +46,12 @@ li a:hover{
     /* overflow-y: auto; */
     overflow-x: hidden;
     overflow-y: visible;
-    /* flex-direction: column; */
-    /* justify-content: center; */
 }
 .sideBar{
     /* position: absolute; */
-    width: 20vw;
+    width: 25vw;
     height: 100vh;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     transition: all 0.3s ease-in-out;
     justify-content: space-between;
@@ -61,20 +59,67 @@ li a:hover{
 .sideBar.hideSideBar{
     width: 2vw;
 }
+.history{
+    /* border: 2px solid red; */
+    border-bottom: 1px solid gray;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#side-angle{
+    color: #0ef;
+    font-size: 2rem;
+    font-weight: 700;
+}
+#left-angle{
+    color: #0ef;
+    font-size: 2rem;
+    font-weight: 700;
+    
+}
 .sidebar-content{
     width: 90%;
     height:100%;
+    border-right: 2px solid gray;
     /* border: 2px solid blue; */
     transition: all 0.3s ease-out;
+}
+.sidebar-content li{
+    list-style: none;
 }
 .sidebar-content.hideSideBar-content{
     display: none;
 }
 .sidebar-slider{
-
+    
     display: flex;
+    margin: auto;
+    height: 5rem;
     justify-content: center;
     align-items: center;
+}
+/* ----------------recent searches---------- */
+.recentChat{
+    font-size: 1.1rem;
+    padding: 0.5rem;
+}
+#cnt{
+    color: #0ef;
+}
+/* -------------------- */
+.title{
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    padding-left: 10vw;
+    padding-top: 12vh;
+    /* align-items: center; */
+}
+.title.hidetitle{
+    display: none;
 }
 .main-container{
     width: 100vw;
@@ -94,6 +139,8 @@ li a:hover{
     /* border: 1px solid grey; */
     height: 10vh;
     display: flex;
+    align-items: center;
+    /* border-radius: 10rem; */
 }
 .profile-logo{
     width: 10%;
@@ -108,11 +155,16 @@ li a:hover{
     /* align-items: center; */
     /* object-fit: contain; */
 }
+.profile-logo img{
+    /* width: 65%; */
+}
 .ganesh-content{
+
     padding-top: 1rem;
     width: 100%;
     /* border: 2px solid #0ef; */
-    /* display: flex; */
+    display: flex;
+    flex-direction: column;
 }
 .ganesh-img{
     width: 20%;

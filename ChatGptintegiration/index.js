@@ -1,10 +1,20 @@
 // const axios = require('axios');
 let allData=[];
-const sideAngle=document.getElementById("side-angle");
+const sideAngle=document.querySelector(".sidebar-slider");
+const rightAngle =document.getElementById("side-angle");
+// const leftAngle=document.getElementById("left-angle");
+const hideTitle=document.querySelector(".title");
 sideAngle.addEventListener("click",()=>{
     const sideBar=document.querySelector(".sidebar-content");
     sideBar.classList.toggle("hideSideBar-content");
     document.querySelector(".sideBar").classList.toggle("hideSideBar");
+    if (rightAngle.innerText==='>') {
+        
+        rightAngle.innerText="<";
+    }else{
+        rightAngle.innerText=">";
+
+    }
 })
 document.addEventListener("DOMContentLoaded",()=>{
     const data=JSON.parse(localStorage.getItem("questionList"))
@@ -12,7 +22,7 @@ document.addEventListener("DOMContentLoaded",()=>{
     let count=1;
     data.forEach(element => {
         const li=document.createElement("li");
-        li.innerHTML=count +" "+element.name;
+        li.innerHTML=`<h1 class="recentChat"><span id="cnt">${count}</span> ${element.name.length>26?element.name.substr(0,27)+'...': element.name}</h1>`;
         parentElement.appendChild(li)
         count+=1
     });
@@ -24,6 +34,7 @@ function setSideBarContent(){
 }
 function setQuestion(question){
     // document.getElementById("question").innerText=question;
+    hideTitle.classList.add("hidetitle");
     const parentElement=document.getElementById("data-container");
     console.log("jewbsjfhsd");
     const div=document.createElement("div");
@@ -54,21 +65,22 @@ function setResult(result){
     div.id="output"
     div.innerHTML=`<div class="ganesh-content">
     <div class="ganesh-img">
-        <img src="ganesh.png" alt="ganesh">
-        <h2>Ganesh</h2>
+        <img src="pngegg.png" alt="ganesh">
+        <h2>Bot</h2>
     </div>
     <div class="content">
-        <p>${result}</p>
+    <p>${result}</p>
     </div>
-
 </div>`;
     // div.innerText=`<p>${result}</p>`
     parentElement.appendChild(div);
     // addToList(prompt,result);
 
 }
-const API_KEY="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";
+const API_KEY="Enter your API_KEY";
 const getResponse=async ()=>{
+    // let isError=false;
+    // let resultData;
     const prompt=document.getElementById("query").value;
     setQuestion(prompt);
   
@@ -87,19 +99,21 @@ const getResponse=async ()=>{
             // temperature: 0.2,
             // n:1,
             // stop:null
-
         })
     }
     try {
-        const result=await fetch(url, requestOptions)
+        await fetch(url, requestOptions)
         .then((res)=>(res.json()))
         .then((data)=>{
             // setResult(data.data.choices[0].message.content)
             data && data.choices ? setResult(data.choices[0].message.content):""
+            // data && data.choices ? resultData=data.choices[0].message.content:isError=true;
+
             console.log(data);
             data && data.choices ? addToList(prompt,data.choices[0].message.content):""
             // addToList(prompt,data.choices[0].message.content)
         }).catch((err)=>{
+            isError=true;
             console.log(err);
         })
         // const data=result.json();
@@ -111,20 +125,19 @@ const getResponse=async ()=>{
         console.log(error.message);
         alert("Something went wrong")
     }
+    // return {
+    //     result:data.choices[0].message.content,
+    //     error:isError
+    // }
 }
 const form =document.querySelector("form");
 const btn=document.querySelector(".btn");
 form.addEventListener("submit",(e)=>{e.preventDefault();
     form.reset();
 });
-btn.addEventListener("click",getResponse)
-
-
-// const axios = require('axios');
-
-// Function to make a request to the OpenAI API
-// const axios = require('axios');
-
+btn.addEventListener("click",()=>{
+    const {isError,result}=getResponse();
+})
 // Function to interact with the ChatGPT API
 async function interactWithChatGPT(prompt) {
     const apiKey = 'YOUR_API_KEY'; // Replace with your actual API key
@@ -152,13 +165,6 @@ async function interactWithChatGPT(prompt) {
     }
 }
 
-// Example usage
-async function main() {
-    const prompt = 'Tell me about yourself.';
-    const response = await interactWithChatGPT(prompt);
-    console.log('Response from ChatGPT:', response);
-}
 
-// Call the main function
-// main();
+
 

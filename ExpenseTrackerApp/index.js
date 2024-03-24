@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', ()=> {
   const totalAmount=document.querySelector("#total-amt");
   const form = document.querySelector('form');
   // const expensesList = document.getElementById('expenses-list');
@@ -57,12 +57,6 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   function addExpenseToList(name, amount, date,expenseId,transType) {
-      // const expenseItem = document.createElement('div');
-      // expenseItem.classList.add('expense');
-      // expenseItem.innerHTML = `
-      //     <strong>${name}</strong> - $${amount.toFixed(2)} - ${date}
-      // `;
-      // console.log(expenseId);
       const div=document.createElement("div");
       div.innerHTML=`
                      <div class="item history-common">
@@ -116,12 +110,4 @@ document.addEventListener('DOMContentLoaded', function() {
         localStorage.setItem('expenses', JSON.stringify(expenses));
       })
     })
-  // function deleteExpense(id){
-  //   const allList=document.querySelectorAll("#delbtn");
-  //   allList.forEach((item)=>{
-  //     item.addEventListener('click',()=>{
-  //       const expenseid=item.parentNode.parentNode.childNodes(0);
-  //     })
-  //   })
-  // }
 });

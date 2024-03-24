@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo" onclick="x()">Portfolio</a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <div class="navigator-container" >
+            <nav class="navbar">
+                <a href="#home" id="navigations">Home</a>
+                <a href="#about" id="navigations">About</a>
+                <a href="#skill" id="navigations">Skills</a>
+                <a href="#services" id="navigations">Services</a>
+                <a href="#projects" id="navigations">Projects</a>
+                <a href="#contact" id="navigations">Contact</a>
+            </nav>
+        </div>
+        <div id="menuIcon" class="menu-bar flex justify-between flex-col cursor-pointer mr-4 lg:hidden">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+    <!-- Home section design -->
+    <section class="home" id="home">
+        <div class="home-img">
+            <img src="./image/profile_1.png" alt="Profile pics">
+        </div>
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Aman Kumar Yadav</h1>
+            <h3>And I'm a <span id="name"></span></h3>
+            <span>
+                <p id="coding"></p>
+            </span>
+            <div class="social-media">
+                <a target="_blank" href="https://www.facebook.com/amanraj.amankumar.1"> <i class='bx bxl-facebook'></i>
+                </a>
+                <a target="_blank" href="#"><i class='bx bxl-twitter'></i></a>
+                <a target="_blank" href="https://www.instagram.com/itz_roy_aman43/"><i
+                        class='bx bxl-instagram-alt'></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/aman-kumar-yadav-0a1b35243/"><i
+                        class='bx bxl-linkedin'></i></a>
+            </div>
+            <a href="#" class="btn">Download CV</a>
+        </div>
+
+    </section>
+    <!-- about section -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="./image/about_img.png" alt="profile pic">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Fullstack Developer</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos dicta fuga quos illum expedita
+                eveniet doloribus! Blanditiis accusantium expedita minus atque labore ipsum laborum, incidunt ea maxime
+                debitis dolore dolor architecto quibusdam aliquid mollitia. Possimus.</p>
+
+            <a href="#" class="btn">Read More</a>
+        </div>
+    </section>
+    <!-- skill section design  -->
+    <section class="skill" id="skill">
+        <h1 class="heading">
+            <span>SKILLS</span>
+        </h1>
+        <div class="skill-container">
+            <div class="skill-box">
+                <div class="skill-progress">
+                    <div class="eighty-five-percent mb-blue">
+                        <div class="skill-name">
+                            <span>C++</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="skill-progress">
+                    <div class="seventy-five-percent mb-orange">
+                        <div class="skill-name">
+                            <span>C</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="skill-box">
+                <div class="skill-progress">
+                    <div class="seventy-percent mb-lorange">
+                        <div class="skill-name">
+                            <span>Python</span>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="skill-box">
+                <div class="skill-progress">
+                    <div class="ninty-percent mb-dark">
+                        <div class="skill-name">
+                            <span>HTML</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="skill-box">
+                <div class="skill-progress">
+                    <div class="fourty-percent mb-red">
+                        <div class="skill-name">
+                            <span>Java</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="skill-progress">
+                    <div class="fifty-percent mb-green">
+                        <div class="skill-name"><span>CSS</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="skill-progress">
+                    <div class="sixty-percent mb-pink">
+                        <div class="skill-name"><span>JavaScript</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="skill-progress">
+                    <div class="sixty-five-percent mb-brown">
+                        <div class="skill-name"><span>Android</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="qualification">
+                    <h2>Qualifications</h2>
+                    <ul>
+                        <li>12 <sup>th</sup> with 75% marks.</li>
+                        <li>B.Tech CSE from AGC,Amritsar</li>
+                        <li>1st Sem :7.87sgpa</li>
+                        <li>2nd Sem :8.52sgpa</li>
+                        <li>3rd Sem :7.35sgpa</li>
+                        <li>3rd Sem :8.22sgpa</li>
+                        <li>3rd Sem :7.83sgpa</li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <!-- services section design -->
+    <section class="services" id="services">
+        <h2 class="heading">Our <span>Services</span></h2>
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Web Development</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam tempora vitae similique repellat
+                    molestias impedit laborum atque quia nesciunt dolorum!</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="services-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Programming</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam tempora vitae similique repellat
+                    molestias impedit laborum atque quia nesciunt dolorum!</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="services-box">
+                <i class='bx bxs-paint'></i>
+                <h3>UI/UX</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam tempora vitae similique repellat
+                    molestias impedit laborum atque quia nesciunt dolorum!</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+
+    </section>
+    <!-- portfolio design section  -->
+    <section class="portfolio" id="projects">
+        <h2 class="heading">Latest <span>Projects</span></h2>
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="https://imgs.search.brave.com/i7uW6wBl8MiTP4X0vH-xWH0NWbuI36FAf_BY_b9Ld7Y/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9oaXBz/LmhlYXJzdGFwcHMu/Y29tL2htZy1wcm9k/L2ltYWdlcy93YXRl/cmxpbHktMTUwODc4/NTA0NS5qcGc_Y3Jv/cD0xLjAweHc6MC42/Njl4aDswLDAuMTkz/eGgmcmVzaXplPTk4/MDoq" alt="Project image">
+                <div class="portfolio-layer">
+                    <h4>Flower Shop</h4>
+                    <p>A <span>Online</span> flower shoping website.</p>
+                    <p>Used languages are:- HTML,CSS,JAVASCRIPT.
+                    </p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGlicmFyeXxlbnwwfHwwfHx8MA%3D%3D" alt="Project image">
+                <div class="portfolio-layer">
+                    <h4>Library Management System</h4>
+                    <p>Currently am working on this project.</p>
+                    <pre>This Project is created with python and 
+used <span>Oracle</span> as Database.
+                    </pre>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <!-- <h2 class="heading" id="heading">Previous <span>Projects</span></h2> -->
+            <div class="portfolio-box">
+                <img src="https://images.unsplash.com/photo-1630178836733-3d61d8974258?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8c3R1ZGVudHxlbnwwfHwwfHx8MA%3D%3D" alt="Project image">
+                <div class="portfolio-layer">
+                    <h4>Student Database Management System</h4>
+                    <p>This project is based on OOPs and <span>C++</span>.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact section design  -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Us</span></h2>
+        <div class="contact-container">
+            <div class="contact-box">
+                
+                <div class="phone"><span>aman-kumar-yadav-0a1b35243 </span></div>
+
+            </div>
+        </div>
+        <div class="contact-container">
+            <div class="contact-box">
+                <h1 id="email">📩</h1>
+                <a href="#">yadavaman7632@gmail.com</a>
+            </div>
+        </div>
+        <div class="contact-container">
+            <div class="contact-box">
+                <h1 id="email">Git<span>hub</span></h1>
+                <div class="phone"><span>@Amanroy7632</span></div>
+            </div>
+        </div>
+    </section>
+    <script>
+        let h1 = document.getElementById("name");
+        let p1 = document.getElementById("coding");
+        let i = 0;
+        let j = 0;
+        let para_text = "I ❤ Coding and Development.";
+        let text = "Full Stack Developer";
+        const typeLbyL = () => {
+            if (i < text.length) {
+                h1.innerHTML += text[i];
+                i++;
+                setTimeout(typeLbyL, 100);
+            } else {
+                setTimeout(() => {
+                    h1.innerHTML = "";
+                    i = 0;
+                    setTimeout(typeLbyL, 800);
+                }, 10000);
+            }
+        };
+        typeLbyL();
+        const typePbL = () => {
+            if (j < para_text.length) {
+                p1.innerHTML += para_text[j];
+                j++;
+                setTimeout(typePbL, 100);
+            } else {
+                setTimeout(() => {
+                    p1.innerHTML = "";
+                    j = 0;
+                    setTimeout(typePbL, 800);
+                }, 10000);
+            }
+        };
+        typePbL();
+        const menuBar = document.querySelector(".menu-bar").addEventListener("click", () => {
+            document.querySelector("#menuIcon").classList.toggle("active-menuBar");
+            document.querySelector(".navbar").classList.toggle("activate");
+        })
+        const hideNavigator=()=>{
+            document.querySelector(".navbar").classList.toggle("activate");
+            document.querySelector("#menuIcon").classList.toggle("active-menuBar");
+
+        }
+        const navigators=document.querySelectorAll("#navigations");
+        navigators.forEach((navs)=>{
+            navs.addEventListener("click",hideNavigator);
+        })
+       
+    </script>
+
+</body>
+
+</html>

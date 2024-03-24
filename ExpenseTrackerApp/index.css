@@ -6,7 +6,6 @@
     /* overflow: hidden; */
     font-family: "Raleway", sans-serif;
 }
-
 header {
     padding-left: 5%;
     padding-right: 5%;
@@ -17,11 +16,9 @@ header {
     color: #fff;
     height: 7vh;
 }
-
 nav {
     width: 25%;
 }
-
 ul {
     display: flex;
     justify-content: space-between;
@@ -39,7 +36,6 @@ li a:hover{
 .span-tracker {
     color: #0ef;
 }
-
 /* ----------------------Header Section Completed--------------- */
 .main-section {
     display: flex;
@@ -69,7 +65,6 @@ li a:hover{
 .balance-field{
     padding: 2rem;
     padding-bottom: 1rem;
-    /* border: 1px solid blue; */
 }
 .same-box{
     width: 80%;
@@ -80,24 +75,17 @@ li a:hover{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    /* border: 1px solid yellow; */
     border-bottom: 1px solid;
-    /* outline: #fff; */
 }
 .common-prop{
-    width: 45%;
-    /* display: flex; */
-    /* justify-content: center; */
-    
+    width: 45%; 
     padding: 0.5rem;
-    /* align-items: center; */
     height: 10vh;
 }
 .income-field{
     border-right: 1px dashed #fff;
 }
 .history-container{
-    /* border: 1px solid pink; */
     padding: 1rem;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -105,14 +93,11 @@ li a:hover{
     height: 30vh;
 }
 .history-common{
-    /* border: 1px solid blue; */
     border-bottom: 1px solid ;
     display: flex;
     justify-content: space-between;
-    /* justify-content: space-evenly; */
-    /* align-content: center; */
     align-items: center;
-     padding: 0.5rem;
+    padding: 0.5rem;
 }
 .transcation{
     padding: 1rem;
@@ -137,17 +122,14 @@ form input{
 .name-amount{
     display: flex;
     justify-content: center;
-    /* flex-wrap: wrap; */
 }
 form select{
     width: 70%;
     outline: none;
     background-color: transparent;
     color: #0ef;
-    /* outline-color: #1e8449; */
     border: none;
     border-bottom: 1px solid #fff;
-    /* margin: auto; */
     margin-left: 1rem;
     font-size: 1.2rem;
     margin-bottom: 1em;  
@@ -171,17 +153,12 @@ form select{
     font-size: 1.5rem;
     font-weight: 900;
 }
-.money span{
-    /* font-size: 1.3rem; */
-}
 .item input:nth-child(1){
-    /* text-align: right; */
     background-color: transparent;
     outline: none;
     border: none;
     width: 30%;
     color: #fff;
-    /* font-size: 1.2rem; */
 }
 .visible{
     display: none;
@@ -217,12 +194,6 @@ form button{
     }
     .main-section{
         padding: 0;
-    }
-    .history-container{
-        /* padding: 0; */
-    }
-    .balance-field{
-        /* padding: 1rem; */
     }
     .same-box{
         width: 95%;
